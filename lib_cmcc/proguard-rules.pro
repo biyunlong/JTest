@@ -20,5 +20,5 @@
     @org.greenrobot.eventbus.Subscribe <methods>;
 }
 -keep !class com.company.cmcc.** {*;}
--keep class com.company.cmcc.TestThree
+-keep class com.company.cmcc.TestThree { *; }
 -dontwarn **
