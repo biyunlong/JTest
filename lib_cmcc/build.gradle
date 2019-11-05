@@ -16,20 +16,14 @@ android {
         consumerProguardFiles 'consumer-rules.pro'
     }
 
-
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
         debug{
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -41,5 +35,4 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     api 'com.google.code.gson:gson:2.8.0'
-    implementation(name: 'onelogin_1.0', ext: 'aar')
 }
